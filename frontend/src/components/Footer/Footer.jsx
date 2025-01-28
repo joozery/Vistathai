@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css"; // นำเข้า CSS
-import AppleIcon from "../../assets/Apple.svg";
-import GoogleIcon from "../../assets/Google.svg";
+import AppleIcon from "../../assets/apple.svg";
+import GoogleIcon from "../../assets/google.svg";
 
 const Footer = () => {
   return (
