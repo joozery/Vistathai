@@ -1,0 +1,170 @@
+/* 🌟 General Styling */
+.challenge-container {
+    font-family: "Prompt", sans-serif;
+    padding: 20px;
+    line-height: 1.8;
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  /* 🌟 Header Section */
+  .challenge-header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .challenge-header h1 {
+    font-size: 2.5rem;
+    color: #e64e20;
+    margin-bottom: 10px;
+  }
+  
+  .challenge-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* 🌟 Challenge Table */
+  .challenge-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .challenge-table th, .challenge-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .challenge-table th {
+    background-color: #e64e20;
+    color: #fff;
+  }
+  
+  .challenge-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* 🌟 Challenge Conditions */
+  .challenge-conditions {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .challenge-conditions h2 {
+    color: #e64e20;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* 🌟 Phase Box */
+  .phase {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    max-width: 95%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .phase:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* 🌟 Phase Title */
+  .phase h3 {
+    color: #e64e20;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* 🌟 Phase List */
+  .phase ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .phase li {
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+  
+  .phase li b {
+    color: #222;
+  }
+  
+  /* 🌟 หมายเหตุ */
+  .challenge-conditions p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 15px;
+  }
+  
+  /* 🌟 Challenge Details */
+  .challenge-details, .challenge-real {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .challenge-details h2, .challenge-real h2 {
+    color: #e64e20;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  /* 🌟 List Styling */
+  .challenge-details ul, .challenge-real ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .challenge-details li, .challenge-real li {
+    background: #eef2ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  /* 🌟 Responsive Design */
+  @media screen and (max-width: 768px) {
+    .challenge-header h1 {
+      font-size: 2rem;
+    }
+    .challenge-header p {
+      font-size: 1rem;
+    }
+    .challenge-table th, .challenge-table td {
+      padding: 8px;
+    }
+    .challenge-conditions {
+      padding: 15px;
+    }
+    .phase {
+      max-width: 100%;
+      padding: 15px;
+    }
+  }
+  

@@ -6,17 +6,27 @@ const SectionVideo = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.2; // ปรับความเร็วเล่นวิดีโอ (0.5 = slow motion)
+      const video = videoRef.current;
+      video.playbackRate = 0.5; // ลดความเร็ว (0.5 = slow motion)
+
+      // ทำให้การเปลี่ยน playbackRate smooth ขึ้น
+      let smoothInterval = setInterval(() => {
+        if (video.playbackRate !== 0.2) {
+          video.playbackRate = 0.5;
+        }
+      }, 1000);
+
+      return () => clearInterval(smoothInterval); // ล้าง interval เมื่อ component ถูก unmount
     }
   }, []);
 
   return (
     <section
       style={{
-        position: "relative", // ทำให้สามารถซ้อนเนื้อหาบนวิดีโอได้
+        position: "relative",
         width: "100%",
-        height: "100vh", // ความสูงเต็มหน้าจอ
-        overflow: "hidden", // ซ่อนส่วนเกินของวิดีโอ
+        height: "100vh",
+        overflow: "hidden",
       }}
     >
       {/* วิดีโอพื้นหลัง */}
@@ -31,9 +41,12 @@ const SectionVideo = () => {
           left: "50%",
           width: "100%",
           height: "100%",
-          objectFit: "cover", // ครอบคลุมพื้นที่โดยไม่เสียสัดส่วน
-          transform: "translate(-50%, -50%)", // จัดให้อยู่ตรงกลาง
-          zIndex: "-1", // ให้อยู่ด้านหลังเนื้อหา
+          objectFit: "cover",
+          transform: "translate(-50%, -50%)",
+          zIndex: "-1",
+          willChange: "transform, opacity", // ช่วยให้เล่นลื่นขึ้น
+          WebkitBackfaceVisibility: "hidden", // ป้องกันกระตุก
+          WebkitTransformStyle: "preserve-3d",
         }}
       >
         <source src={videoFile} type="video/mp4" />
@@ -46,12 +59,12 @@ const SectionVideo = () => {
           position: "relative",
           color: "white",
           textAlign: "center",
-          zIndex: "1", // ให้อยู่เหนือวิดีโอ
+          zIndex: "1",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          height: "100%", // ครอบคลุมความสูงทั้งหมด
+          height: "100%",
           padding: "0 20px",
         }}
       >
@@ -64,7 +77,7 @@ const SectionVideo = () => {
             maxWidth: "600px",
             margin: "0 auto 30px",
             lineHeight: "1.6",
-            fontFamily: "'Prompt', sans-serif", // ใช้ Prompt
+            fontFamily: "'Prompt', sans-serif",
           }}
         >
           Join over 750,000 traders in the world’s leading firm. Trade in a fully simulated environment and earn up to 100% rewards.
@@ -81,7 +94,7 @@ const SectionVideo = () => {
               cursor: "pointer",
               boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
               transition: "background-color 0.3s",
-              fontFamily: "'Prompt', sans-serif", // ใช้ Prompt
+              fontFamily: "'Prompt', sans-serif",
             }}
           >
             Buy Challenge
@@ -97,7 +110,7 @@ const SectionVideo = () => {
               cursor: "pointer",
               boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
               transition: "background-color 0.3s",
-              fontFamily: "'Prompt', sans-serif", // ใช้ Prompt
+              fontFamily: "'Prompt', sans-serif",
             }}
           >
             Join Competition

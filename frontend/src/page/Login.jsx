@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import mockupImage from "../assets/login_hero.svg"; // ภาพ mockup ด้านบน
+import mockupImage from "../assets/vistabrand.png"; // ภาพ mockup ด้านบน
 import awardsImage from "../assets/awards.svg"; // ภาพสำหรับข้อมูลรางวัลด้านล่าง
 import googleIcon from "../assets/google-icon.svg"; // ไอคอน Google
 import appleIcon from "../assets/apple-icon.svg"; // ไอคอน Apple

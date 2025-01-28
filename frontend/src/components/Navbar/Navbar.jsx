@@ -18,7 +18,7 @@ const Navbar = () => {
           <Link to="/challenge">Challenge</Link>
         </li>
         <li><Link to="/ea-robottade">EA-robottade</Link></li>
-        <li><Link to="/use-program">การใช้โปรแกรม</Link></li>
+        <li><Link to="/useprogram">การใช้โปรแกรม</Link></li>
         <li>
           <Link to="/about-us">About Us</Link>
           <ul className="dropdown">
