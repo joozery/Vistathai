@@ -1,0 +1,74 @@
+.ea-robottade-container {
+  display: flex;
+  flex-direction: row; /* จัดเรียงเนื้อหาในแนวนอน */
+  justify-content: space-between; /* เว้นพื้นที่ระหว่างส่วนหัวและภาพ */
+  align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+  background-color: #e0bfa6; /* สีพื้นหลัง */
+  padding: 50px 100px; /* เพิ่มพื้นที่ด้านข้าง */
+  color: #000000; /* สีข้อความ */
+  font-family: Arial, sans-serif;
+  height: 100vh; /* ใช้ความสูงเต็มหน้าจอ */
+  box-sizing: border-box; /* รวม padding เข้าในขนาด */
+}
+
+.container {
+  max-width: 1200px; /* กำหนดความกว้างสูงสุด */
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
+  width: 100%; /* ให้ขยายเต็มที่ตามหน้าจอ */
+  display: flex;
+  flex-direction: row; /* จัดเรียงเนื้อหาแนวนอน */
+  justify-content: space-between; /* เว้นพื้นที่ระหว่างส่วนหัวและภาพ */
+  align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+}
+
+.header-section {
+  flex: 1; /* ให้ส่วนหัวใช้พื้นที่ตามต้องการ */
+  max-width: 600px;
+  text-align: left; /* จัดข้อความให้อยู่ด้านซ้าย */
+}
+
+.header-section h1 {
+  font-size: 48px; /* ขนาดตัวอักษรของหัวข้อใหญ่ */
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.header-section h1 span {
+  color: #000000; /* สีเน้นของข้อความในหัวข้อ */
+}
+
+.header-section p {
+  font-size: 18px; /* ขนาดตัวอักษรของคำอธิบาย */
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.image-section {
+  flex: 1; /* ให้พื้นที่ของภาพเท่ากับส่วนหัว */
+  display: flex;
+  justify-content: center; /* จัดภาพให้อยู่ตรงกลาง */
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  width: 450px; /* กำหนดความกว้างภาพ */
+}
+
+.download-section {
+  display: flex;
+  gap: 20px; /* เพิ่มช่องว่างระหว่างไอคอนดาวน์โหลด */
+  margin-top: 20px;
+}
+
+.download-section img {
+  width: 140px; /* ขนาดของไอคอนดาวน์โหลด */
+  transition: transform 0.3s; /* เพิ่มเอฟเฟกต์ขยาย */
+  cursor: pointer;
+}
+
+.download-section img:hover {
+  transform: scale(1.1); /* ขยายเมื่อเลื่อนเมาส์ */
+}

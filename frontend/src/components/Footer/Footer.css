@@ -1,0 +1,94 @@
+/* โครงสร้างหลัก */
+.footer-content {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: space-between; /* กระจายคอลัมน์ให้มีระยะห่างเท่ากัน */
+    flex-wrap: nowrap; /* ปิดการทำ wrap เพื่อให้ทุกคอลัมน์อยู่ในแถวเดียว */
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ Footer */
+    margin: 0 auto; /* จัดให้อยู่กึ่งกลางหน้าจอ */
+    padding: 20px 0; /* ระยะห่างด้านบนและล่าง */
+
+  }
+  
+  .footer-content {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: space-between; /* จัดการระยะห่างระหว่างคอลัมน์ */
+    flex-wrap: wrap; /* ให้ปรับตามขนาดหน้าจอ */
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Prompt', sans-serif;
+    ba
+  }
+  
+  /* คอลัมน์ */
+  .footer-column {
+    flex: 1; /* แบ่งพื้นที่ของคอลัมน์ให้เท่าๆ กัน */
+    margin: 0 10px; /* ระยะห่างด้านซ้ายและขวา */
+    min-width: 150px; /* กำหนดความกว้างขั้นต่ำของแต่ละคอลัมน์ */
+  }
+  
+  .footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .footer-column li:hover {
+    text-decoration: underline;
+    color: #007bff;
+  }
+  
+  /* ลิงก์ดาวน์โหลดแอป */
+  .app-links {
+    display: flex; /* ใช้ Flexbox */
+    gap: 10px; /* ระยะห่างระหว่างไอคอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+  }
+  
+  .app-links img {
+    width: 120px; /* ขนาดไอคอน */
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* ลิงก์โซเชียล */
+  .social-links {
+    display: flex; /* ใช้ Flexbox */
+    gap: 15px; /* ระยะห่างระหว่างไอคอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+  }
+  
+  .social-links i {
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .social-links i:hover {
+    color: #007bff;
+  }
+  
+  /* ส่วนท้าย */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #777;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  

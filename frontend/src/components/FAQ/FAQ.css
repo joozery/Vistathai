@@ -1,0 +1,88 @@
+.faq-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.faq-section {
+    margin-bottom: 30px;
+}
+
+.faq-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.3s ease-in-out; /* เพิ่ม Transition สำหรับ Animation */
+}
+
+.faq-item.active {
+    background: hsl(41, 73%, 86%);
+    transform: scale(1.02); /* เพิ่มเอฟเฟกต์ขยายเล็กน้อยเมื่อ Active */
+}
+
+.faq-question {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out; /* เพิ่ม Transition สำหรับ Hover */
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังเมื่อ Hover */
+}
+
+.faq-question span {
+    font-size: 16px;
+    color: #666;
+    transition: transform 0.3s ease-in-out; /* เพิ่มเอฟเฟกต์หมุนเมื่อ Active */
+}
+
+.faq-item.active .faq-question span {
+    transform: rotate(180deg); /* หมุนไอคอนเมื่อ Active */
+}
+
+.faq-answer {
+    padding: 15px;
+    font-size: 16px;
+    background: #f9f9f9;
+    color: #555;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out; /* Animation เปิด/ปิด */
+}
+
+.faq-item.active .faq-answer {
+    opacity: 1;
+    max-height: 200px; /* กำหนดความสูงสูงสุดเมื่อ Active */
+}
+
+.faq-all-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background: #f96c00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.faq-all-button:hover {
+    background: #019877;
+}

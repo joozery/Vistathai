@@ -1,0 +1,63 @@
+.why-funding-pips-container {
+
+    background-color: #000; /* พื้นหลังสีดำ */
+    color: #fff; /* ตัวหนังสือสีขาว */
+    padding: 40px 20px;
+  }
+  
+  .why-funding-pips-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Prompt', sans-serif; /* ฟอนต์ Prompt */
+  }
+  
+  .why-funding-pips-grid {
+    display: flex;
+    justify-content: space-between; /* จัดระยะห่างระหว่าง Cards */
+    gap: 20px; /* ระยะห่างระหว่าง Cards */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .why-funding-pips-card {
+    flex: 1 1 calc(25% - 20px); /* แสดง 4 Card ใน 1 แถว */
+    min-width: 250px; /* ความกว้างขั้นต่ำ */
+    background-color: rgba(255, 255, 255, 0.05); /* พื้นหลังโปร่งใส */
+    padding: 20px;
+    border-radius: 16px; /* ขอบโค้งมน */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* ขอบสีโปร่งใส */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .why-funding-pips-card:hover {
+    transform: translateY(-5px); /* ยกการ์ดขึ้นเมื่อ Hover */
+    border-color: #d64828; /* เปลี่ยนขอบเป็นสีน้ำเงินเมื่อ Hover */
+  }
+  
+  .why-funding-pips-icon {
+    font-size: 3rem; /* ขนาดไอคอน */
+    margin-bottom: 15px;
+    color:  #ff7f50;
+    text-align: left;
+  }
+  
+  .why-funding-pips-card-title {
+    font-size: 1.0rem; /* ขนาดหัวข้อ */
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Prompt', sans-serif; /* ฟอนต์ Prompt */
+    text-align: left;
+  }
+  
+  .why-funding-pips-card-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0; /* ตัวหนังสือสีขาวหม่น */
+    font-family: 'Prompt', sans-serif; /* ฟอนต์ Prompt */
+    text-align: left;
+  }
+  

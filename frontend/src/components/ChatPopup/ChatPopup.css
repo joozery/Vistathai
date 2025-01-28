@@ -1,0 +1,135 @@
+.chat-popup-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .chat-toggle-button {
+    width: 60px;
+    height: 60px;
+    background-color: #e64e20;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .chat-toggle-button:hover {
+    background-color: #f8b467;
+    transform: scale(1.1);
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .chat-popup {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px; /* เพิ่มความกว้าง */
+    background-color: #ffffff;
+    border-radius: 15px; /* เพิ่มความโค้งมน */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .chat-header {
+    background-color: #e64e20;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-top-left-radius: 15px; /* เพิ่มความโค้งด้านบน */
+    border-top-right-radius: 15px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .chat-header h3 {
+    margin: 0;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .close-button:hover {
+    transform: rotate(90deg);
+  }
+  
+  .chat-body {
+    padding: 20px; /* เพิ่ม padding */
+    max-height: 300px; /* เพิ่มความสูง */
+    overflow-y: auto;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .chat-body .chat-message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .chat-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    resize: none;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .chat-footer {
+    padding: 15px; /* เพิ่ม padding */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* ปรับให้แนวตั้ง */
+    align-items: stretch;
+    gap: 10px;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .send-button {
+    background-color: #00c853; /* ใช้สีเขียว */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .send-button:hover {
+    background-color: #009624;
+    transform: scale(1.05);
+    font-family: 'Prompt', sans-serif;
+  }
+  
