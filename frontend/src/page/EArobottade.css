@@ -3,7 +3,7 @@
   flex-direction: row; /* จัดเรียงเนื้อหาในแนวนอน */
   justify-content: space-between; /* เว้นพื้นที่ระหว่างส่วนหัวและภาพ */
   align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
-  background-color: #e0bfa6; /* สีพื้นหลัง */
+  background-color: #faf4eb; /* สีพื้นหลัง */
   padding: 50px 100px; /* เพิ่มพื้นที่ด้านข้าง */
   color: #000000; /* สีข้อความ */
   font-family: Arial, sans-serif;
