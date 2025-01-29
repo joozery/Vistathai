@@ -10,6 +10,9 @@ import EArobottade from "./page/EA-robottade"; // หน้า EA-robottade
 import AboutUs from "./page/AboutUs"; // หน้า About Us (เพิ่มการ import)
 import Useprogram from "./page/Useprogram";
 import Challenge from "./page/Challenge";
+import CookiePopup from "./components/CookiePopup"; 
+import CookiePolicy from "./page/CookiePolicy"; 
+
 
 const App = () => {
   const location = useLocation(); // ใช้เพื่อดึงเส้นทางปัจจุบัน
@@ -27,9 +30,12 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} /> {/* หน้า About Us (เพิ่มเส้นทางนี้) */}
         <Route path="/useprogram" element={<Useprogram />} /> {/* หน้า Useprogram */}
         <Route path="/challenge" element={<Challenge />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
       </Routes>
       {!isLoginPage && <Footer />} {/* ซ่อน Footer ถ้าอยู่ใน /login */}
       {!isLoginPage && <ChatPopup />} {/* ซ่อน ChatPopup ถ้าอยู่ใน /login */}
+      {!isLoginPage && <CookiePopup />}
+      
     </>
   );
 };

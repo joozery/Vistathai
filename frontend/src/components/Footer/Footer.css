@@ -61,22 +61,24 @@
 }
 
 /* 🌟 ลิงก์โซเชียล */
+/* 🌟 ลิงก์โซเชียล */
 .social-links {
   display: flex;
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
-.social-links i {
-  font-size: 1.5rem;
-  color: #555;
-  cursor: pointer;
+.social-links a {
+  font-size: 1.2rem;
+  color: #0c0101;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-links i:hover {
-  color: #007bff;
+.social-links a:hover {
+  color: #e64e20;
+  transform: scale(1.2);
 }
 
 /* 🌟 ส่วนล่างของ Footer */
@@ -84,7 +86,7 @@
   text-align: center;
   margin-top: 20px;
   font-size: 0.9rem;
-  color: #777;
+  color: #000000;
 }
 
 .footer-bottom p {

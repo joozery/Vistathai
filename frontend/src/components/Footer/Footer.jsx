@@ -3,6 +3,9 @@ import "./Footer.css"; // นำเข้า CSS
 import AppleIcon from "../../assets/apple.svg";
 import GoogleIcon from "../../assets/google.svg";
 
+// นำเข้าไอคอนจาก react-icons
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className="footer-container">
@@ -35,7 +38,7 @@ const Footer = () => {
           <h4>บทวิเคราะห์และคลังความรู้</h4>
           <ul>
             <li>บทวิเคราะห์</li>
-            <li>Pi Knowledge</li>
+            <li>Vista Knowledge</li>
           </ul>
           <h4>โปรโมชั่น</h4>
           <ul>
@@ -58,32 +61,43 @@ const Footer = () => {
         <div className="footer-column">
           <h4>แอป MetaTrader 5</h4>
           <div className="app-links">
-            <a 
-              href="https://apps.apple.com/us/app/metatrader-5/id413251709" 
-              target="_blank" 
+            <a
+              href="https://apps.apple.com/us/app/metatrader-5/id413251709"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <img src={AppleIcon} alt="App Store" />
             </a>
-            <a 
-              href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5" 
-              target="_blank" 
+            <a
+              href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <img src={GoogleIcon} alt="Google Play" />
             </a>
           </div>
+
+          {/* Social Media Icons */}
           <h4>ติดตามเรา</h4>
           <div className="social-links">
-            <i className="fab fa-facebook"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-youtube"></i>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebook />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <FaYoutube />
+            </a>
           </div>
         </div>
       </div>
+
       <div className="footer-bottom">
-        <p>© 2025 Vsita thailand | นโยบายความเป็นส่วนตัว | ค่าเตือนความเสี่ยง</p>
+        <p>© 2025 Vista Thailand | นโยบายความเป็นส่วนตัว | ค่าเตือนความเสี่ยง</p>
       </div>
     </footer>
   );

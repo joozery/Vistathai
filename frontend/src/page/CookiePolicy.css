@@ -1,0 +1,72 @@
+/* 🌟 โครงสร้างหลัก */
+.cookie-policy-container {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* 🌟 Header Section */
+.cookie-policy-header {
+    background: linear-gradient(135deg, #9d663f, #ffbc9f); /* ไล่สีฟ้าตามภาพ */
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.cookie-policy-header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* 🌟 Content Section */
+.cookie-policy-content {
+    max-width: 1000px;
+    margin: -50px auto 40px; /* ดันขึ้นไปชิดขอบ Header */
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* 🌟 Paragraph Styling */
+.cookie-policy-content p {
+    margin-bottom: 15px;
+    text-align: justify; /* จัดเนื้อหาให้อ่านง่าย */
+}
+
+/* 🌟 Strong Tag */
+.cookie-policy-content strong {
+    font-weight: bold;
+    color: #000;
+}
+
+/* 🌟 Links */
+.cookie-policy-content a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cookie-policy-content a:hover {
+    text-decoration: underline;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+    .cookie-policy-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .cookie-policy-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .cookie-policy-content p {
+        font-size: 0.9rem;
+    }
+}
