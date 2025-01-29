@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import mapImage from "../assets/image.webp"; // รูปแผนที่
+import mapImage from "../assets/image.png"; // รูปแผนที่
 
 // นำเข้าไอคอนจาก React Icons
 import { FaDiscord, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";

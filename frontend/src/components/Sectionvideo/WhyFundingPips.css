@@ -1,63 +1,132 @@
+/* 🌟 โครงสร้างหลัก */
 .why-funding-pips-container {
+  background-color: #000; /* พื้นหลังสีดำ */
+  color: #fff; /* ตัวหนังสือสีขาว */
+  padding: 40px 20px;
+  text-align: center;
+}
 
-    background-color: #000; /* พื้นหลังสีดำ */
-    color: #fff; /* ตัวหนังสือสีขาว */
-    padding: 40px 20px;
-  }
-  
-  .why-funding-pips-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: 'Prompt', sans-serif; /* ฟอนต์ Prompt */
-  }
-  
+/* 🌟 หัวข้อ */
+.why-funding-pips-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: 'Prompt', sans-serif;
+}
+
+/* 🌟 Grid Layout */
+.why-funding-pips-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* ทำให้ปรับเปลี่ยนตามขนาดหน้าจอ */
+}
+
+/* 🌟 การ์ด */
+.why-funding-pips-card {
+  flex: 1 1 calc(25% - 20px); /* 4 Cards ต่อแถว */
+  min-width: 250px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.why-funding-pips-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff7f50;
+}
+
+/* 🌟 ไอคอน */
+.why-funding-pips-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #ff7f50;
+  text-align: left;
+}
+
+/* 🌟 หัวข้อของการ์ด */
+.why-funding-pips-card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Prompt', sans-serif;
+  text-align: left;
+}
+
+/* 🌟 คำอธิบายของการ์ด */
+.why-funding-pips-card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-family: 'Prompt', sans-serif;
+  text-align: left;
+}
+
+/* 🌟 Responsive Design */
+
+/* ✅ สำหรับแท็บเล็ต (max-width: 1024px) */
+@media (max-width: 1024px) {
   .why-funding-pips-grid {
-    display: flex;
-    justify-content: space-between; /* จัดระยะห่างระหว่าง Cards */
-    gap: 20px; /* ระยะห่างระหว่าง Cards */
-    max-width: 1200px;
+    flex-wrap: wrap; /* ให้การ์ดขึ้นบรรทัดใหม่เมื่อแคบลง */
+    justify-content: center;
+  }
+
+  .why-funding-pips-card {
+    flex: 1 1 calc(50% - 20px); /* 2 Cards ต่อแถว */
+  }
+}
+
+/* ✅ สำหรับมือถือ (max-width: 768px) */
+@media (max-width: 768px) {
+  .why-funding-pips-container {
+    padding: 30px 15px;
+  }
+
+  .why-funding-pips-title {
+    font-size: 1.8rem;
+  }
+
+  .why-funding-pips-grid {
+    flex-direction: column; /* จัดการ์ดเป็นแนวตั้ง */
+  }
+
+  .why-funding-pips-card {
+    flex: 1 1 100%; /* 1 Card ต่อแถว */
+    max-width: 90%;
     margin: 0 auto;
   }
-  
-  .why-funding-pips-card {
-    flex: 1 1 calc(25% - 20px); /* แสดง 4 Card ใน 1 แถว */
-    min-width: 250px; /* ความกว้างขั้นต่ำ */
-    background-color: rgba(255, 255, 255, 0.05); /* พื้นหลังโปร่งใส */
-    padding: 20px;
-    border-radius: 16px; /* ขอบโค้งมน */
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* ขอบสีโปร่งใส */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
-    transition: transform 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .why-funding-pips-card:hover {
-    transform: translateY(-5px); /* ยกการ์ดขึ้นเมื่อ Hover */
-    border-color: #d64828; /* เปลี่ยนขอบเป็นสีน้ำเงินเมื่อ Hover */
-  }
-  
-  .why-funding-pips-icon {
-    font-size: 3rem; /* ขนาดไอคอน */
-    margin-bottom: 15px;
-    color:  #ff7f50;
-    text-align: left;
-  }
-  
+
   .why-funding-pips-card-title {
-    font-size: 1.0rem; /* ขนาดหัวข้อ */
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: 'Prompt', sans-serif; /* ฟอนต์ Prompt */
-    text-align: left;
-  }
-  
-  .why-funding-pips-card-description {
     font-size: 1rem;
-    line-height: 1.6;
-    color: #e0e0e0; /* ตัวหนังสือสีขาวหม่น */
-    font-family: 'Prompt', sans-serif; /* ฟอนต์ Prompt */
-    text-align: left;
   }
-  
+
+  .why-funding-pips-card-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ สำหรับมือถือจอเล็ก (max-width: 480px) */
+@media (max-width: 480px) {
+  .why-funding-pips-title {
+    font-size: 1.6rem;
+  }
+
+  .why-funding-pips-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .why-funding-pips-card-title {
+    font-size: 0.9rem;
+  }
+
+  .why-funding-pips-card-description {
+    font-size: 0.8rem;
+  }
+}

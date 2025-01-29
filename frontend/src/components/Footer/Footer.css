@@ -1,94 +1,149 @@
-/* โครงสร้างหลัก */
-.footer-content {
-    display: flex; /* ใช้ Flexbox */
-    justify-content: space-between; /* กระจายคอลัมน์ให้มีระยะห่างเท่ากัน */
-    flex-wrap: nowrap; /* ปิดการทำ wrap เพื่อให้ทุกคอลัมน์อยู่ในแถวเดียว */
-    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ Footer */
-    margin: 0 auto; /* จัดให้อยู่กึ่งกลางหน้าจอ */
-    padding: 20px 0; /* ระยะห่างด้านบนและล่าง */
+/* 🌟 โครงสร้างหลักของ Footer */
+.footer {
+  background-color: #f8f9fa; /* สีพื้นหลังเทาอ่อน */
+  padding: 30px 20px;
+  font-family: 'Prompt', sans-serif;
+  color: #000;
+}
 
-  }
-  
+/* 🌟 คอนเทนต์ของ Footer */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* ให้แต่ละคอลัมน์ปรับขนาดตามจอ */
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* 🌟 คอลัมน์ */
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-column li:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+/* 🌟 ลิงก์ดาวน์โหลดแอป */
+.app-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-links img {
+  width: 140px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* 🌟 ลิงก์โซเชียล */
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.social-links i {
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.social-links i:hover {
+  color: #007bff;
+}
+
+/* 🌟 ส่วนล่างของ Footer */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* 🌟 Responsive Design */
+
+/* สำหรับแท็บเล็ต (max-width: 1024px) */
+@media (max-width: 1024px) {
   .footer-content {
-    display: flex; /* ใช้ Flexbox */
-    justify-content: space-between; /* จัดการระยะห่างระหว่างคอลัมน์ */
-    flex-wrap: wrap; /* ให้ปรับตามขนาดหน้าจอ */
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Prompt', sans-serif;
-    ba
-  }
-  
-  /* คอลัมน์ */
-  .footer-column {
-    flex: 1; /* แบ่งพื้นที่ของคอลัมน์ให้เท่าๆ กัน */
-    margin: 0 10px; /* ระยะห่างด้านซ้ายและขวา */
-    min-width: 150px; /* กำหนดความกว้างขั้นต่ำของแต่ละคอลัมน์ */
-  }
-  
-  .footer-column h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #000;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column li {
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-    color: #555;
-    cursor: pointer;
-  }
-  
-  .footer-column li:hover {
-    text-decoration: underline;
-    color: #007bff;
-  }
-  
-  /* ลิงก์ดาวน์โหลดแอป */
-  .app-links {
-    display: flex; /* ใช้ Flexbox */
-    gap: 10px; /* ระยะห่างระหว่างไอคอน */
-    justify-content: center; /* จัดให้อยู่ตรงกลาง */
-  }
-  
-  .app-links img {
-    width: 120px; /* ขนาดไอคอน */
-    height: auto;
-    cursor: pointer;
-  }
-  
-  /* ลิงก์โซเชียล */
-  .social-links {
-    display: flex; /* ใช้ Flexbox */
-    gap: 15px; /* ระยะห่างระหว่างไอคอน */
-    justify-content: center; /* จัดให้อยู่ตรงกลาง */
-  }
-  
-  .social-links i {
-    font-size: 1.5rem;
-    color: #555;
-    cursor: pointer;
-  }
-  
-  .social-links i:hover {
-    color: #007bff;
-  }
-  
-  /* ส่วนท้าย */
-  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-top: 20px;
+  }
+
+  .footer-column {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* สำหรับมือถือ (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .app-links img {
+    width: 120px;
+  }
+
+  .social-links i {
+    font-size: 1.3rem;
+  }
+}
+
+/* สำหรับมือถือเล็ก (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-column {
+    width: 100%;
+  }
+
+  .app-links img {
+    width: 100px;
+  }
+
+  .social-links i {
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom {
     font-size: 0.8rem;
-    color: #777;
-    font-family: 'Prompt', sans-serif;
   }
-  
-  .footer-bottom p {
-    margin: 0;
-  }
-  
+}

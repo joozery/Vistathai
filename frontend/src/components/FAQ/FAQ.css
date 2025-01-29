@@ -1,88 +1,169 @@
+/* 🌟 โครงสร้างหลัก */
 .faq-container {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
-    font-family: Arial, sans-serif;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.faq-section {
-    margin-bottom: 30px;
-}
-
-.faq-section h3 {
-    font-size: 24px;
+    font-family: 'Prompt', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0 20px; /* เพิ่ม Padding เพื่อให้ดูดีขึ้นในมือถือ */
+  }
+  
+  /* 🌟 แต่ละหัวข้อ */
+  .faq-section {
     margin-bottom: 20px;
-    color: #333;
-}
-
-.faq-item {
+  }
+  
+  .faq-section h3 {
+    font-size: 22px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    color: #333;
+    text-align: center; /* จัดกลางสำหรับมือถือ */
+  }
+  
+  /* 🌟 FAQ Box */
+  .faq-item {
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
-    transition: all 0.3s ease-in-out; /* เพิ่ม Transition สำหรับ Animation */
-}
-
-.faq-item.active {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-item.active {
     background: hsl(41, 73%, 86%);
-    transform: scale(1.02); /* เพิ่มเอฟเฟกต์ขยายเล็กน้อยเมื่อ Active */
-}
-
-.faq-question {
-    padding: 15px;
+    transform: scale(1.02);
+  }
+  
+  /* 🌟 คำถาม */
+  .faq-question {
+    padding: 12px 15px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.3s ease-in-out; /* เพิ่ม Transition สำหรับ Hover */
-}
-
-.faq-question:hover {
-    background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังเมื่อ Hover */
-}
-
-.faq-question span {
-    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .faq-question:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .faq-question span {
+    font-size: 14px;
     color: #666;
-    transition: transform 0.3s ease-in-out; /* เพิ่มเอฟเฟกต์หมุนเมื่อ Active */
-}
-
-.faq-item.active .faq-question span {
-    transform: rotate(180deg); /* หมุนไอคอนเมื่อ Active */
-}
-
-.faq-answer {
-    padding: 15px;
-    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .faq-item.active .faq-question span {
+    transform: rotate(180deg);
+  }
+  
+  /* 🌟 คำตอบ */
+  .faq-answer {
+    padding: 12px 15px;
+    font-size: 14px;
     background: #f9f9f9;
     color: #555;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out; /* Animation เปิด/ปิด */
-}
-
-.faq-item.active .faq-answer {
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  }
+  
+  .faq-item.active .faq-answer {
     opacity: 1;
-    max-height: 200px; /* กำหนดความสูงสูงสุดเมื่อ Active */
-}
-
-.faq-all-button {
+    max-height: 250px;
+  }
+  
+  /* 🌟 ปุ่มเปิด/ปิดทั้งหมด */
+  .faq-all-button {
     display: block;
     margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 10px 16px;
+    font-size: 16px;
     color: #fff;
     background: #f96c00;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     text-align: center;
-}
-
-.faq-all-button:hover {
+  }
+  
+  .faq-all-button:hover {
     background: #019877;
-}
+  }
+  
+  /* 🌟 Responsive Design */
+  
+  /* ✅ สำหรับแท็บเล็ต (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .faq-container {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  
+    .faq-section h3 {
+      font-size: 20px;
+    }
+  
+    .faq-question {
+      font-size: 15px;
+    }
+  
+    .faq-answer {
+      font-size: 14px;
+    }
+  }
+  
+  /* ✅ สำหรับมือถือ (max-width: 768px) */
+  @media (max-width: 768px) {
+    .faq-container {
+      padding: 0 10px;
+    }
+  
+    .faq-section h3 {
+      font-size: 18px;
+    }
+  
+    .faq-question {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .faq-answer {
+      font-size: 13px;
+    }
+  
+    .faq-all-button {
+      font-size: 14px;
+      padding: 8px 14px;
+    }
+  }
+  
+  /* ✅ สำหรับมือถือจอเล็ก (max-width: 480px) */
+  @media (max-width: 480px) {
+    .faq-container {
+      padding: 0 5px;
+    }
+  
+    .faq-section h3 {
+      font-size: 16px;
+    }
+  
+    .faq-question {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .faq-answer {
+      font-size: 12px;
+    }
+  
+    .faq-all-button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  

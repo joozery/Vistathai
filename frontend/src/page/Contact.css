@@ -1,135 +1,220 @@
+/* 🌟 โครงสร้างหลัก */
 .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000002; /* สีพื้นหลัง */
-    color: white;
-    min-height: 100vh;
-    padding: 2rem;
-    font-family: 'Prompt', sans-serif;
-    
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000002; /* สีพื้นหลัง */
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Prompt', sans-serif;
+}
+
+/* 🌟 คอนเทนต์ */
+.contact-content-wrapper {
+  max-width: 1200px;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* 🌟 ส่วนเนื้อหา */
+.contact-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* 🌟 หัวข้อ */
+.contact-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e64e20;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* 🌟 รายละเอียดการติดต่อ */
+.contact-details h3,
+.social-media h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #e64e20;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.contact-text span {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.2rem;
+}
+
+.contact-item a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #62a1ff;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact-item a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 🌟 โซเชียลมีเดีย */
+.social-media {
+  margin-top: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: #62a1ff;
+}
+
+/* 🌟 แผนที่ */
+.contact-map {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-image {
+  width: 100%;
+  height: 80;
+  border-radius: 8px;
+}
+
+/* 🌟 Responsive Design */
+
+/* ✅ สำหรับแท็บเล็ต (max-width: 1024px) */
+@media (max-width: 1024px) {
   .contact-content-wrapper {
-    max-width: 1200px; /* ความกว้างสูงสุดของเนื้อหา */
-    display: flex;
-    gap: 2rem;
-    width: 100%;
-  }
-  
-  .contact-content {
-    flex: 1;
-    display: flex;
     flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .contact-header h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .contact-header p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #e64e20;
-    margin-bottom: 0.5rem;
-  }
-  
-  .contact-header h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัด */
-  }
-  
-  .contact-details h3,
-  .social-media h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #e64e20;
-  }
-  
-  .contact-details {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; /* เพิ่มระยะห่างระหว่างแต่ละรายการ */
-  }
-  
-  .contact-item {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* เส้นแบ่งระหว่างแต่ละรายการ */
-  }
-  
-  .contact-text {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-text p {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0;
-    color: white;
-  }
-  
-  .contact-text span {
-    font-size: 0.875rem;
-    color: rgba(255, 255, 255, 0.8); /* สีตัวอักษรจางกว่า */
-    margin-top: 0.2rem;
-  }
-  
-  .contact-item a {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: rgba(255, 255, 255, 0.1); /* พื้นหลังโปร่งใส */
-    color: #62a1ff;
-    font-size: 1rem;
-    border-radius: 8px;
-    text-decoration: none;
     text-align: center;
   }
-  
-  .contact-item a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+
+  .contact-header h1 {
+    font-size: 3rem;
   }
-  
-  .social-media {
-    margin-top: 2rem;
+
+  .contact-header h2 {
+    font-size: 1.3rem;
   }
-  
-  .social-icons {
-    display: flex;
-    gap: 1rem;
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
-  
-  .social-icons a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-  
-  .social-icons a:hover {
-    color: #62a1ff;
-  }
-  
+
   .contact-map {
-    flex: 1;
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .map-image {
     width: 100%;
-    height: 80;
-    border-radius: 8px;
   }
-  
+}
+
+/* ✅ สำหรับมือถือ (max-width: 768px) */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 2rem 1rem;
+  }
+
+  .contact-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-text p {
+    font-size: 1rem;
+  }
+
+  .contact-item a {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .contact-map {
+    height: 300px;
+  }
+}
+
+/* ✅ สำหรับมือถือจอเล็ก (max-width: 480px) */
+@media (max-width: 480px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-header h2 {
+    font-size: 1rem;
+  }
+
+  .contact-item a {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+
+  .contact-map {
+    height: 250px;
+  }
+}
