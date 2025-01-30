@@ -38,12 +38,12 @@ const ChatPopup = () => {
           {/* ถ้ายังไม่ได้กรอกชื่อให้แสดง Input กรอกชื่อ */}
           {!isNameSubmitted ? (
             <div className="chat-form">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">ชื่อของผู้ติดต่อ</label>
               <div className="input-group">
                 <input
                   type="text"
                   id="name"
-                  placeholder="Enter your name"
+                  placeholder="ใส่ชื่อของคุณ"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
