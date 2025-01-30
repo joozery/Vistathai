@@ -20,7 +20,7 @@ const Navbar = () => {
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><Link to="/trader-training" onClick={() => setMenuOpen(false)}>Trader training</Link></li>
         <li><Link to="/challenge" onClick={() => setMenuOpen(false)}>Challenge</Link></li>
-        <li><Link to="/ea-robottade" onClick={() => setMenuOpen(false)}>EA-robottade</Link></li>
+        <li><Link to="/ea-robottade" onClick={() => setMenuOpen(false)}>EA-robottrade</Link></li>
         <li><Link to="/useprogram" onClick={() => setMenuOpen(false)}>การใช้โปรแกรม</Link></li>
         <li>
           <Link to="/about-us" onClick={() => setMenuOpen(false)}>About Us</Link>

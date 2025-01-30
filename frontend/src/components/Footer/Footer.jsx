@@ -25,11 +25,10 @@ const Footer = () => {
         <div className="footer-column">
           <h4>ผลิตภัณฑ์และบริการ</h4>
           <ul>
-            <li>หุ้นไทย</li>
-            <li>หุ้นต่างประเทศ</li>
-            <li>ตราสารอนุพันธ์</li>
-            <li>Block Trade</li>
-            <li>ตราสารหนี้</li>
+            <li>บัญชีเทรด</li>
+            <li>Challenge</li>
+            <li>Speed Challenge</li>
+            <li>EA-Robot Trade</li>
           </ul>
         </div>
 
@@ -37,12 +36,8 @@ const Footer = () => {
         <div className="footer-column">
           <h4>บทวิเคราะห์และคลังความรู้</h4>
           <ul>
-            <li>บทวิเคราะห์</li>
+            <li>EMA </li>
             <li>Vista Knowledge</li>
-          </ul>
-          <h4>โปรโมชั่น</h4>
-          <ul>
-            <li>โปรโมชั่น</li>
           </ul>
         </div>
 
@@ -85,12 +80,7 @@ const Footer = () => {
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <FaYoutube />
+          
             </a>
           </div>
         </div>

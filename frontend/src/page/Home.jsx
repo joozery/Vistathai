@@ -9,7 +9,7 @@ const Home = () => {
       <Navbar /> {/* แสดง Navbar */}
       <div className="home-content">
         <SectionVideo /> {/* แสดง SectionVideo */}
-        <WhyFundingPips /> {/* แสดง WhyFundingPips */}
+      
       </div>
     </div>
   );
