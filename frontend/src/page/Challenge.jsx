@@ -22,11 +22,11 @@ const Challenge = () => {
             </tr>
           </thead>
           <tbody>
-            <tr><td>ระดับ 1</td><td>10,000</td><td>99</td></tr>
-            <tr><td>ระดับ 2</td><td>30,000</td><td>180</td></tr>
-            <tr><td>ระดับ 3</td><td>50,000</td><td>280</td></tr>
-            <tr><td>ระดับ 4</td><td>100,000</td><td>480</td></tr>
-            <tr><td>ระดับ 5</td><td>200,000</td><td>960</td></tr>
+            <tr><td>Level 1</td><td>10,000</td><td>99</td></tr>
+            <tr><td>Level 2</td><td>30,000</td><td>180</td></tr>
+            <tr><td>Level 3</td><td>50,000</td><td>280</td></tr>
+            <tr><td>Level 4</td><td>100,000</td><td>480</td></tr>
+            <tr><td>Level 5</td><td>200,000</td><td>960</td></tr>
           </tbody>
         </table>
       </section>
