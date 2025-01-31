@@ -22,7 +22,7 @@ const EArobottade = () => {
         <div className="container">
           <div className="header-section">
             <h1>
-              สมัครพอร์ตหุ้น เริ่มลงทุนง่าย ด้วยแอป <span>MetaTrader 5</span>
+            เปิดพอร์ต เริ่มลงทุนง่ายๆ ด้วยแอป <span>MetaTrader 5</span>
             </h1>
             <p>
               MetaTrader 5 แอปพลิเคชันเพื่อการลงทุนที่คนยุคใหม่ต้องมี เปิดพอร์ตหุ้นออนไลน์
