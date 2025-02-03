@@ -5,6 +5,7 @@ import awardsImage from "../assets/awards.svg"; // ภาพสำหรับ�
 import googleIcon from "../assets/google-icon.svg"; // ไอคอน Google
 import appleIcon from "../assets/apple-icon.svg"; // ไอคอน Apple
 import facebookIcon from "../assets/facebook-icon.svg"; // ไอคอน Facebook
+import LanguageSwitcher from "../components/LaguageSwitcher";
 
 const Login = () => {
   const [isRegister, setIsRegister] = useState(false);
@@ -28,10 +29,11 @@ const Login = () => {
       {/* Right Section */}
       <div className="right-container">
         <div className="language-switch">
-          <select>
+          <LanguageSwitcher />
+          {/* <select>
             <option value="en">EN</option>
             <option value="th">TH</option>
-          </select>
+          </select> */}
         </div>
         <div className="login-box">
           <h2>{isRegister ? "Register" : "Sign In"}</h2>

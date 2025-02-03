@@ -1,0 +1,87 @@
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.language-dropdown span {
+    font-weight: 300;
+    color: white;
+}
+
+.language-toggle {
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.language-menu {
+    position: absolute;
+    top: 110%;
+    /* left: 0; */
+    background-color: #1e1e1e;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.language-switch .language-menu{
+    position: absolute;
+    top: 110%;
+    left: auto;
+    right: 0;
+    background-color: #1e1e1e;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.language-menu.visible {
+    max-height: 150px;
+    opacity: 1;
+}
+
+.language-menu li {
+    cursor: pointer;
+    margin: 0;
+    width: 10em;
+    padding: 1.2em 1.5em;
+    transition: background-color 0.2s ease;
+}
+
+.language-menu li:hover {
+    background-color: rgb(41, 41, 41);
+    border-right: 5px solid #E64E20;
+}
+
+.language-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.language-menu li a:hover {
+    color: white;
+}

@@ -61,7 +61,7 @@
   .about-us-content {
     flex-direction: column; /* เปลี่ยนเป็นแนวตั้ง */
     text-align: center;
-    margin-top: 60px;
+    margin-top: 4em;
     margin-bottom: 100px;
   }
 

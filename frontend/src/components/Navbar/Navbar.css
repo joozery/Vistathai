@@ -28,6 +28,7 @@
 /* 🌟 Menu */
 .navbar-menu {
   display: flex;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -83,7 +84,7 @@
 .navbar-buttons button {
   background-color: transparent;
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 5px 15px;
   color: white;
   cursor: pointer;
@@ -105,6 +106,178 @@
 .navbar-buttons .dashboard:hover {
   background-color: #eb6025;
 }
+
+/* 🌟 Menu Mobile (Nack) */
+.menu-container {
+  position: relative;
+  z-index: 100;
+}
+
+/* 🔘 Hamburger Button (อยู่มุมขวา) */
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  /* ย้ายไปมุมขวา */
+  z-index: 1002;
+}
+
+/* 📱 Side Menu (สไลด์จากขวา) */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  /* ซ่อนเมนูนอกจอทางขวา */
+  width: 80%;
+  height: 100vh;
+  background-color: #1e1e1e;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 1001;
+}
+
+/* 🚀 Slide-in Animation */
+.side-menu.open {
+  right: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  /* แสดงเมนู */
+}
+
+/* เมื่อ side-menu เปิด ไอคอน hamburger จะเคลื่อนที่ไปทางซ้าย */
+.side-menu.open+.hamburger svg {
+  transform: translateY(-50%) rotate(180deg);
+  /* เคลื่อนที่ไปทางซ้ายและหมุน */
+}
+
+/* ❌ Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+
+/* 📋 Menu Items */
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu a {
+  display: flex;
+  width: 100%;
+  padding: 1.2em 2em;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.side-menu a:hover {
+  color: #00bcd4;
+  /* สี Hover */
+}
+
+.side-menu .language-toggle {
+  padding: 0;
+}
+
+/* 🌑 Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.side-menu .language-menu {
+  padding: 0;
+}
+
+/* ปรับให้เมนูภาษาดูเป็น dropdown */
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 1.2em 2em;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dropdown-menu {
+  /* list-style-type: none; */
+  /* margin: 0; */
+  /* padding: 0; */
+  background-color: #333;
+  /* border-radius: 4px; */
+  /* position: absolute; */
+  width: 100%;
+  /* top: 40px; */
+  overflow: hidden;
+  max-height: 0;
+  /* ซ่อนเมนูภาษาตอนเริ่มต้น */
+  transition: max-height 0.3s ease-in-out;
+  /* เพิ่ม transition เพื่อทำให้การเปิด/ปิดมีความนุ่มนวล */
+}
+
+.dropdown-menu.open {
+  max-height: 200px;
+  /* เมื่อเมนูเปิดให้สูงสุด */
+}
+
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 1.2em 2em;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  display: flex;
+  padding: 0 1em;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #555;
+}
+
+/* .dropdown-menu .flag-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+} */
+
+.font-300 {
+  font-weight: 300;
+}
+
+
+/* 🌟 Menu Mobile (Nack) */
 
 /* 🌟 Dropdown */
 .dropdown {
@@ -146,7 +319,7 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 6px;
+  gap: 8px;
 }
 
 .hamburger div {
@@ -188,11 +361,17 @@
     padding: 10px 15px;
   }
 
+  .navbar {
+    padding: 10px 20px;
+    border-radius: 0 0 20px 20px;
+  }
+
   .navbar-menu {
     display: none;
   }
 
   .hamburger {
+    top: 15px;
     display: flex;
   }
 }
@@ -214,6 +393,10 @@
 
   .navbar-logo img {
     height: 40px;
+  }
+
+  .hamburger {
+    top: 10px;
   }
 }
 

@@ -25,6 +25,7 @@ const SectionVideo = () => {
       style={{
         position: "relative",
         width: "100%",
+        padding: "60px 0 20px 0",
         height: "100vh",
         overflow: "hidden",
       }}

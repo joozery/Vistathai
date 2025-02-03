@@ -113,6 +113,7 @@
 
   .image-section {
     order: -1; /* ทำให้รูปขึ้นมาก่อนบนแท็บเล็ต */
+    margin-top: 50px;
     margin-bottom: 20px;
   }
 
