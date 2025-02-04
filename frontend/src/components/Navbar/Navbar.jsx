@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../assets/logo2.png";
+import logo from "../../assets/logo2v.png";
 import LanguageSwitcher from "../LaguageSwitcher";
 
 const Navbar = () => {
