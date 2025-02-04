@@ -9,17 +9,18 @@
 }
 
 .language-toggle {
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 12px;
+    /* gap: 12px; */
     transition: all 0.3s ease;
 }
 
 .flag-icon {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
     border-radius: 50%;
     object-fit: cover;
 }
