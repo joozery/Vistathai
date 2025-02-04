@@ -132,13 +132,13 @@
 .side-menu {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -250%;
   /* ซ่อนเมนูนอกจอทางขวา */
   width: 80%;
   height: 100vh;
   background-color: #1e1e1e;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  transition: right 0.3s ease;
+  transition: right 0.3s ease-in-out;
   z-index: 1001;
 }
 
