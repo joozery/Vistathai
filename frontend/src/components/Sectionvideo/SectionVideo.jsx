@@ -48,6 +48,7 @@ const SectionVideo = () => {
           willChange: "transform, opacity", // ช่วยให้เล่นลื่นขึ้น
           WebkitBackfaceVisibility: "hidden", // ป้องกันกระตุก
           WebkitTransformStyle: "preserve-3d",
+          pointerEvents: "none", // ป้องกันการคลิก
         }}
       >
         <source src={videoFile} type="video/mp4" />
