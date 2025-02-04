@@ -70,13 +70,13 @@ const Navbar = () => {
           {/* <button className="" onClick={() => setIsOpen(false)}>×</button> */}
           <div style={{ height: "50px" }}></div>
           <ul>
-            <li><a href="/" onClick={() => setMenuOpen(false)}>Home</a></li>
-            <li><a href="/trader-training" onClick={() => setMenuOpen(false)}>Trader training</a></li>
-            <li><a href="/challenge" onClick={() => setMenuOpen(false)}>Challenge</a></li>
-            <li><a href="/ea-robottade" onClick={() => setMenuOpen(false)}>EA-robottade</a></li>
-            <li><a href="/useprogram" onClick={() => setMenuOpen(false)}>การใช้โปรแกรม</a></li>
-            <li><a href="/about-us" onClick={() => setMenuOpen(false)}>About Us</a></li>
-            <li><a href="/contact" onClick={() => setMenuOpen(false)}>Contact us</a></li>
+            <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
+            <li><Link to="/trader-training" onClick={() => setIsOpen(false)}>Trader training</Link></li>
+            <li><Link to="/challenge" onClick={() => setIsOpen(false)}>Challenge</Link></li>
+            <li><Link to="/ea-robottade" onClick={() => setIsOpen(false)}>EA-robottade</Link></li>
+            <li><Link to="/useprogram" onClick={() => setIsOpen(false)}>การใช้โปรแกรม</Link></li>
+            <li><Link to="/about-us" onClick={() => setIsOpen(false)}>About Us</Link></li>
+            <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact us</Link></li>
             {/* <li><LanguageSwitcher /></li> */}
             {/* เมนูภาษาแบบ Dropdown */}
             <li style={{ padding: "0" }}>
@@ -94,24 +94,24 @@ const Navbar = () => {
               {/* เมนูภาษาที่จะเปิดเมื่อคลิก */}
               <ul className={`dropdown-menu ${isLanguageOpen ? 'open' : ''}`}>
                 <li>
-                  <a href="/" onClick={() => setIsLanguageOpen(false)}>
+                  <Link to="/" onClick={() => setIsOpen(false)}>
                     <img
                       src="https://flagcdn.com/w20/gb.png"
                       alt="English"
                       className="flag-icon"
                     />
                     <span className='font-300'>English</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/" onClick={() => setIsLanguageOpen(false)}>
+                  <Link to="/" onClick={() => setIsOpen(false)}>
                     <img
                       src="https://flagcdn.com/w20/th.png"
                       alt="Thai"
                       className="flag-icon"
                     />
                     <span>ไทย</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
