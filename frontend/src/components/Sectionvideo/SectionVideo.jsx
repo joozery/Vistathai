@@ -26,8 +26,8 @@ const SectionVideo = () => {
       style={{
         position: "relative",
         width: "100%",
-        padding: "60px 0 20px 0",
-        height: "100vh",
+        padding: "80px 0 20px 0",
+        height: "115vh",
         overflow: "hidden",
       }}
     >
@@ -76,7 +76,7 @@ const SectionVideo = () => {
         </h1>
         <p
           style={{
-            fontSize: "1.2rem",
+            fontSize: "1.0rem",
             maxWidth: "600px",
             margin: "0 auto 30px",
             lineHeight: "1.6",

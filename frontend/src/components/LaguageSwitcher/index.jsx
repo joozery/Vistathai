@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './LanguageSwitcher.css';
 import { Link } from 'react-router-dom';
+
 const LanguageSwitcher = () => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -41,6 +42,36 @@ const LanguageSwitcher = () => {
                             className="flag-icon"
                         />
                         <span>ไทย</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="#">
+                        <img
+                            src="https://flagcdn.com/w20/cn.png"
+                            alt="Chinese (Simplified)"
+                            className="flag-icon"
+                        />
+                        <span>简体中文</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="#">
+                        <img
+                            src="https://flagcdn.com/w20/hk.png"
+                            alt="Chinese (Traditional)"
+                            className="flag-icon"
+                        />
+                        <span>繁體中文</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="#">
+                        <img
+                            src="https://flagcdn.com/w20/sa.png"
+                            alt="Arabic"
+                            className="flag-icon"
+                        />
+                        <span>العربية</span>
                     </Link>
                 </li>
             </ul>
